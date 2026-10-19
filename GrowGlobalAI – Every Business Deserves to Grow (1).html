@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GrowGlobalAI – Every Business Deserves to Grow</title>
+<meta name="description" content="Free AI tools for businesses worldwide: solve business problems, build a website, write marketing content, improve SEO and find customers ethically.">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f8fb;--card:#fff;--ink:#0b2a3c;--mute:#4a6275;--line:#d5e1ea;--pri:#0a5c8f;--pri2:#e6f2fa;--acc:#12b886;--warn:#b45309;--hero:#0b2a3c;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1822;--card:#11283a;--ink:#e8f1f7;--mute:#9db4c5;--line:#24425a;--pri:#5cb8ee;--pri2:#16364d;--acc:#3ddba7;--warn:#f0b35a;--hero:#071219}}
+:root[data-theme="dark"]{--bg:#0a1822;--card:#11283a;--ink:#e8f1f7;--mute:#9db4c5;--line:#24425a;--pri:#5cb8ee;--pri2:#16364d;--acc:#3ddba7;--warn:#f0b35a;--hero:#071219}
+*,*::before,*::after{box-sizing:inherit}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,sans-serif;line-height:1.15;margin:0 0 .5em}
+a{color:var(--pri)}.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:20;background:var(--hero);color:#fff}
+header .wrap{display:flex;align-items:center;gap:14px;min-height:56px;flex-wrap:wrap}
+.logo{font:800 1.25rem 'Bricolage Grotesque',sans-serif;color:#fff;text-decoration:none;display:flex;gap:8px;align-items:center}
+.logo i{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#12b886,#5cb8ee);display:inline-block}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}nav a{color:#d7e8f3;text-decoration:none;padding:6px 10px;border-radius:8px;font-size:.95rem}nav a:hover,nav a:focus-visible{background:#ffffff22}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.hero{background:var(--hero);color:#fff;padding:48px 0 56px}
+.hero h1{font-size:clamp(2rem,5.5vw,3.6rem);font-weight:800;max-width:15em}
+.hero p{color:#c3d9e8;max-width:40em;font-size:1.1rem}.tag{color:#7fe3c1;font-weight:700;margin:0 0 8px}
+.ask{display:flex;gap:8px;margin:22px 0 14px;flex-wrap:wrap}
+.ask input{flex:1 1 300px;font:inherit;padding:16px 18px;border-radius:12px;border:2px solid transparent;min-height:56px}
+button,.btn{font:700 1rem Figtree,sans-serif;border:0;border-radius:10px;padding:12px 18px;cursor:pointer;background:var(--pri);color:#fff;text-decoration:none;display:inline-block;min-height:44px}
+:root:not([data-theme="light"]) button,:root:not([data-theme="light"]) .btn{color:#06151f}
+@media (prefers-color-scheme:light){button,.btn{color:#fff}}
+.btn.alt,button.alt{background:transparent;border:2px solid currentColor;color:inherit}
+.hero .btn.alt{color:#fff}button.sm{padding:6px 12px;min-height:34px;font-size:.9rem}button.ghost{background:var(--pri2);color:var(--pri)}
+button:disabled{opacity:.55;cursor:wait}
+section{padding:44px 0}h2{font-size:clamp(1.5rem,3.5vw,2.2rem)}
+.lead{color:var(--mute);max-width:44em;margin-bottom:22px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{font-size:1.1rem}.card p{margin:.3em 0 .8em;color:var(--mute);font-size:.97rem}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:14px}
+.tabs button{background:var(--card);color:var(--ink);border:1px solid var(--line);white-space:nowrap}
+.tabs button[aria-selected=true]{background:var(--pri);color:#fff;border-color:var(--pri)}
+:root:not([data-theme="light"]) .tabs button[aria-selected=true]{color:#06151f}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+label{display:block;font-weight:700;font-size:.93rem;margin:12px 0 4px}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.form{display:grid;gap:0 14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.form .full{grid-column:1/-1}
+.out{white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:14px;min-height:60px;overflow-wrap:anywhere}
+.note{font-size:.88rem;color:var(--mute)}.warn{color:var(--warn);font-weight:700}
+.chat{max-height:420px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;margin-bottom:10px}
+.msg{padding:10px 14px;border-radius:12px;white-space:pre-wrap;max-width:92%;overflow-wrap:anywhere}
+.msg.u{background:var(--pri);color:#fff;align-self:flex-end}:root:not([data-theme="light"]) .msg.u{color:#06151f}
+.msg.a{background:var(--bg);border:1px solid var(--line)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.93rem}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+.pill{font-size:.78rem;font-weight:700;padding:2px 9px;border-radius:99px;display:inline-block;white-space:nowrap}
+.p-ok{background:#d3f5e6;color:#0a5a3c}.p-key{background:#fff0c9;color:#7a4b00}.p-ext{background:#e0e7ff;color:#2b3a8a}.p-pro{background:#ececec;color:#444}
+iframe{width:100%;height:480px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.settings{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.settings div{flex:1 1 150px}.settings label{margin-top:0}
+footer{background:var(--hero);color:#c3d9e8;padding:34px 0}footer a{color:#fff}footer .wrap{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;margin:8px 0}summary{cursor:pointer;font-weight:700}
+.sr{position:absolute;left:-9999px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="#top"><i></i>GrowGlobalAI</a>
+<nav aria-label="Main"><a href="#workspace" data-go="solver">Problem Solver</a><a href="#workspace" data-go="website">Website</a><a href="#workspace" data-go="marketing">Marketing</a><a href="#workspace" data-go="seo">SEO</a><a href="#industries">Industries</a><a href="#workspace" data-go="dashboard">Dashboard</a><a href="#pricing">Plans</a></nav></div></header>
+<main id="top">
+<div class="hero"><div class="wrap">
+<p class="tag">Every Business Deserves to Grow.</p>
+<h1>Tell Us Your Business Problem. Let AI Help You Grow.</h1>
+<p>GrowGlobalAI gives shopkeepers, restaurants, startups, freelancers and larger companies free AI help to find what’s holding them back, make a plan, write marketing, build a simple website and get found online. Suggestions are guidance, not guarantees.</p>
+<div class="ask"><label class="sr" for="q">Describe your business problem</label><input id="q" placeholder="What problem is your business facing?" autocomplete="off"><button id="go" style="background:#12b886;color:#06151f">Grow My Business</button></div>
+<a class="btn alt" href="#workspace" data-go="website">Create a Free Website</a>
+</div></div>
+
+<section id="workspace"><div class="wrap">
+<h2>Your AI growth workspace</h2>
+<p class="lead">Choose your country, language and currency first. Tools use them so advice and examples fit where you work.</p>
+<div class="settings">
+<div><label for="country">Country</label><select id="country"></select></div>
+<div><label for="lang">Language</label><select id="lang"></select></div>
+<div><label for="cur">Currency</label><select id="cur"></select></div>
+<div><label for="tz">Time zone</label><input id="tz" readonly></div></div>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+</div></section>
+
+<section id="tools"><div class="wrap"><h2>Explore free AI tools</h2><p class="lead">Each tool opens in the workspace above.</p><div class="grid" id="toolgrid"></div></div></section>
+
+<section id="industries" style="background:var(--pri2)"><div class="wrap"><h2>Solutions for your kind of business</h2><p class="lead">Pick an industry to start with a ready prompt for a growth plan, marketing ideas and a website outline.</p><div class="grid" id="indgrid"></div></div></section>
+
+<section id="resources"><div class="wrap"><h2>Guides to get started</h2><div class="grid">
+<div class="card"><h3>Success tips</h3><p>Talk to five customers this week. Ask what almost stopped them from buying, then fix the top answer first.</p><button class="sm ghost" data-ask="Give me 10 practical business success tips for a small business in my country">Get more tips</button></div>
+<div class="card"><h3>Marketing guide</h3><p>Pick one channel, post consistently for 30 days, and track how many people contact you from it.</p><button class="sm ghost" data-ask="Write a beginner marketing guide for a small local business with no budget">Get the guide</button></div>
+<div class="card"><h3>Startup resources</h3><p>Validate before you build: define the customer, the problem, and what they pay now to solve it.</p><button class="sm ghost" data-tab="startup">Open startup tools</button></div></div></div></section>
+
+<section id="pricing" style="background:var(--pri2)"><div class="wrap"><h2>Free and paid plans</h2>
+<div class="grid"><div class="card"><h3>Free</h3><p>Basic AI advice, a limited number of generations (set by available resources), basic website previews and downloads, marketing copy, SEO checklists, and projects saved on this device. No payment needed.</p></div>
+<div class="card"><h3>Pro <span class="pill p-pro">Not available</span></h3><p>Planned: higher AI limits, advanced templates, extra reports and workflows. Payments are not set up, so there is no price, nothing to buy and no charge. Prices, billing period, limits and cancellation terms will be shown before any future payment.</p><button disabled>Upgrade unavailable</button></div></div></div></section>
+
+<section id="status"><div class="wrap"><h2>What works today</h2><p class="lead">Honest status of every feature in this prototype.</p>
+<div class="scroll"><table><thead><tr><th>Feature</th><th>Status</th><th>Notes</th></tr></thead><tbody id="stat"></tbody></table></div></div></section>
+
+<section id="about"><div class="wrap"><h2>About, help and policies</h2>
+<details id="about-d"><summary>About us</summary><p>GrowGlobalAI is an early prototype of a free AI business-growth platform. It has no customers, testimonials or partners to report.</p></details>
+<details><summary>Contact</summary><p>No contact channel is configured yet. The owner should add a real email address or form before launch.</p></details>
+<details><summary>Privacy policy (draft)</summary><p>Saved projects, leads and brand details stay in this browser on this device. They aren’t uploaded by this page. Text you send to an AI tool goes to Claude to produce a reply. Don’t enter customers’ private details into AI prompts. Use Dashboard → Export or Delete at any time. Have a lawyer review before launch.</p></details>
+<details><summary>Terms (draft)</summary><p>AI output may be wrong or incomplete. Check it, and check local advertising, tax and consumer laws before use. Nothing here is a promise of sales, profit or ranking. Have a lawyer review before launch.</p></details>
+<details><summary>Help</summary><p>Choose a tool, fill the fields, press Generate. Use Copy or Save on results. If the AI doesn’t respond, check the status table above.</p></details>
+</div></section>
+</main>
+<footer><div class="wrap"><div><strong style="color:#fff">GrowGlobalAI</strong><br>Every Business Deserves to Grow.</div>
+<div><a href="#about" data-open="0">About Us</a> · <a href="#about">Contact</a> · <a href="#about">Privacy Policy</a> · <a href="#about">Terms</a> · <a href="#about">Help</a></div></div></footer>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const COUNTRIES=['India','United States','United Kingdom','Nigeria','Kenya','South Africa','Brazil','Mexico','Indonesia','Philippines','Pakistan','Bangladesh','UAE','Canada','Australia','Germany','France','Other'];
+const LANGS=['English','Hindi','Telugu','Spanish','French','Portuguese','Arabic','Swahili','Indonesian','German','Bengali','Urdu'];
+const CURS=['INR','USD','GBP','EUR','NGN','KES','ZAR','BRL','MXN','IDR','PHP','PKR','BDT','AED','CAD','AUD'];
+const CATS=['Clothing/fashion','Restaurant/café','Beauty/skincare','Real estate','Retail/grocery','Photography','Education/coaching','Freelancer/creator','Online store','Technology startup','Local service','Other'];
+const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}};
+const fill=(id,a,def)=>{const s=$(id);s.innerHTML=a.map(x=>`<option>${x}</option>`).join('');const v=store.get('gg_'+id.slice(1));s.value=v&&a.includes(v)?v:def;s.onchange=()=>store.set('gg_'+id.slice(1),s.value)};
+fill('#country',COUNTRIES,'India');fill('#lang',LANGS,'English');fill('#cur',CURS,'INR');
+try{$('#tz').value=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){$('#tz').value='Unknown'}
+const ctx=()=>`User context: country=${$('#country').value}; reply language=${$('#lang').value}; currency for any prices=${$('#cur').value}; time zone=${$('#tz').value}.`;
+const RULES=`You are GrowGlobalAI, a practical business-growth assistant for businesses of any size worldwide. Use simple language. Never promise guaranteed sales, profit, rankings or success. Don't assume the same ad rules, taxes, payment methods or regulations apply in every country; tell the user to verify local rules. Label output as AI-generated suggestions. You have no live search or ranking data; never invent statistics, testimonials or customer numbers. Recommend free or low-cost tools.`;
+let sampleP=null;const getSample=()=>sampleP||(sampleP=(window.claude?claude.use('sample'):Promise.resolve(null)).catch(()=>null));
+async function ai(input,onText){const s=await getSample();if(!s)throw {code:'unavailable',message:'AI isn’t available in this view. Open this page signed in to Claude. For your own hosting, add a server-side proxy that holds your API key; never put keys in browser code.'};
+try{const r=await s(input,{onText:o=>onText&&onText(o.text),cache:false});return r.text}catch(e){throw {message:e&&e.code==='not_granted'?'AI permission was declined. Reload and allow it to use AI tools.':e&&e.code==='rate_limited'?'Free AI limit reached for now. Wait a few minutes and try again.':(e&&e.message)||'The AI request failed. Try again.'}}}
+const items=()=>store.get('gg_items',[]);
+function save(tool,title,out){const a=items();a.unshift({id:Date.now(),tool,title,out,ts:new Date().toISOString()});return store.set('gg_items',a.slice(0,100))}
+const copy=async t=>{try{await navigator.clipboard.writeText(t);return true}catch(e){return false}};
+
+const FIELDS={
+biz:['Business name','text'],cat:['Business category','sel',CATS],aud:['Target audience','text'],plat:['Platform','sel',['Instagram','Facebook','WhatsApp','YouTube/Shorts','TikTok','Google','Email','Website']],
+obj:['Campaign objective','sel',['Get more customers','Promote an offer','Festival/seasonal sale','Launch a product','Get repeat customers','Build brand awareness']],city:['City','text'],extra:['Extra details (products, offer, tone)','area']};
+const mk=(keys,act)=>({fields:keys,act});
+const TOOLS={
+marketing:{name:'Marketing Studio',desc:'Captions, ads, scripts, WhatsApp messages, calendars.',fields:['biz','cat','aud','plat','obj','extra'],
+ pick:['Instagram captions','Facebook ad','Poster text and layout brief','Promotional video script','Short-form video ideas','Product descriptions','Festival/seasonal campaign','Slogans','Email draft','WhatsApp promo message','SEO website content','30-day content calendar'],
+ p:(v,k)=>`Create: ${k}. Business: ${v.biz||'my business'} (${v.cat}). Audience: ${v.aud||'local customers'}. Platform: ${v.plat}. Objective: ${v.obj}. Notes: ${v.extra||'none'}. Give 2–3 options that are ready to copy. Add a short note on local ad or messaging rules to check (e.g. consent for WhatsApp/email).`,
+ links:[['Canva','https://www.canva.com'],['Instagram','https://www.instagram.com'],['Facebook Pages','https://www.facebook.com/pages'],['WhatsApp Business','https://business.whatsapp.com']]},
+seo:{name:'SEO Assistant',desc:'Titles, keywords, local SEO, checklists.',fields:['biz','cat','city','extra'],
+ pick:['SEO titles and meta descriptions','Keyword ideas','Local business description','Blog post ideas','Website content improvements','Product page descriptions','Basic SEO checklist','Google Business Profile optimisation guide','Ways to improve local search visibility'],
+ p:(v,k)=>`Create: ${k}. Business: ${v.biz||'my business'} (${v.cat}) in ${v.city||'my city'}. Notes: ${v.extra||'none'}. Start with a line saying these are AI-generated recommendations, not verified rankings or live keyword data, and suggest the free tools to verify (Google Search Console, Google Business Profile, Google Keyword Planner).`,
+ links:[['Google Business Profile','https://business.google.com'],['Search Console','https://search.google.com/search-console']]},
+startup:{name:'Startup Assistant',desc:'Evaluate ideas, plan an MVP, pitch outlines.',fields:['biz','aud','extra'],
+ pick:['Startup idea evaluation','Business model suggestions','Market research plan','Competitor research checklist','MVP plan','Feature list','Pricing strategy ideas','Landing page copy','Customer interview questions','Pitch outline'],
+ p:(v,k)=>`Create: ${k}. Idea/name: ${v.biz||'my idea'}. Target customer: ${v.aud||'unknown'}. Details: ${v.extra||'none'}. Be honest about risks and assumptions to test; end with concrete next steps for this week.`,links:[]},
+leadgen:{name:'Lead Ideas',desc:'Personas, outreach, referral and follow-up templates.',fields:['biz','cat','aud','city','extra'],
+ pick:['Customer persona','Target audience suggestions','Local marketing plan','Outreach message templates','Referral campaign ideas','Lead follow-up templates','Customer retention strategies'],
+ p:(v,k)=>`Create: ${k}. Business: ${v.biz||'my business'} (${v.cat}) in ${v.city||'my city'}. Audience: ${v.aud||'local customers'}. Notes: ${v.extra||'none'}. Only ethical, permission-based methods: no scraping, buying lists or unsolicited bulk messages; remind about consent and local privacy/spam laws.`,links:[]}};
+const TABS=[['solver','Problem Solver'],['website','Website Builder'],['marketing','Marketing'],['seo','SEO'],['leadgen','Leads'],['startup','Startup'],['dashboard','Dashboard']];
+let tab='solver',chat=[];
+function fld(k){const[l,t,o]=FIELDS[k];const id='f_'+k;const bx=t==='sel'?`<select id="${id}">${o.map(x=>`<option>${x}</option>`).join('')}</select>`:t==='area'?`<textarea id="${id}" rows="3"></textarea>`:`<input id="${id}">`;return `<div class="${t==='area'?'full':''}"><label for="${id}">${l}</label>${bx}</div>`}
+const vals=keys=>Object.fromEntries(keys.map(k=>[k,($('#f_'+k)||{}).value||'']));
+function show(t){tab=t;$$('#tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===t));const P=$('#panel');
+ if(t==='solver')return solver(P);if(t==='website')return website(P);if(t==='dashboard')return dash(P);if(t==='leadgen')return tool(P,t,leads);tool(P,t)}
+function tool(P,t,extra){const T=TOOLS[t];P.innerHTML=`<h3>${T.name}</h3><p class="note">${T.desc} Results are AI-generated suggestions.</p><div class="form">${T.fields.map(fld).join('')}<div class="full"><label for="pk">What do you want to create?</label><select id="pk">${T.pick.map(x=>`<option>${x}</option>`).join('')}</select></div></div>
+<div class="bar"><button id="gen">Generate</button><button class="ghost" id="cp" disabled>Copy</button><button class="ghost" id="sv" disabled>Save to dashboard</button>${T.links.map(l=>`<a class="btn alt sm" style="min-height:34px;padding:6px 12px" target="_blank" rel="noopener" href="${l[1]}">${l[0]} ↗</a>`).join('')}</div><div class="out" id="res" aria-live="polite">Your result will appear here.</div><p class="note">External links open the tool’s own site. GrowGlobalAI does not post to any account.</p>${extra?'<hr>':''}<div id="ex"></div>`;
+ if(extra)extra($('#ex'));let last='';
+ $('#gen').onclick=async()=>{const b=$('#gen');b.disabled=true;$('#res').textContent='Thinking…';try{const k=$('#pk').value;last=await ai(RULES+'\n'+ctx()+'\n'+T.p(vals(T.fields),k),x=>{$('#res').textContent=x});$('#res').textContent=last;$('#cp').disabled=$('#sv').disabled=false;$('#sv').dataset.title=T.name+': '+k}catch(e){$('#res').innerHTML='<span class="warn">'+esc(e.message)+'</span>'}b.disabled=false};
+ $('#cp').onclick=async()=>{$('#cp').textContent=(await copy(last))?'Copied':'Select text and copy manually'};
+ $('#sv').onclick=()=>{$('#sv').textContent=save(t,$('#sv').dataset.title,last)?'Saved on this device':'Couldn’t save (storage blocked)'}}
+function solver(P){P.innerHTML=`<h3>AI Business Problem Solver</h3><div class="bar" style="margin:0 0 10px">${['Website Creation','Marketing','SEO','Sales','Business Planning','Branding','Startup Development'].map(c=>`<button class="sm ghost" data-cat="${c}">${c}</button>`).join('')}</div>
+<div class="chat" id="chat" aria-live="polite"></div><div id="cat" class="note"></div>
+<label for="ci">Describe your problem or ask a follow-up</label><textarea id="ci" rows="2" placeholder="What problem is your business facing?"></textarea>
+<div class="bar"><button id="send">Send</button><button class="ghost" id="newc">New chat</button></div>
+<details><summary>Remember my business details (optional)</summary><div class="form"><div><label for="mb">Business name</label><input id="mb"></div><div><label for="mc">What you sell and where</label><input id="mc"></div></div><div class="bar"><button class="sm ghost" id="mem">Save details on this device</button><button class="sm ghost" id="forget">Forget</button><span class="note" id="mst"></span></div></details>
+<p class="note">Replies are AI-generated guidance, not guarantees. Don’t type customers’ private information.</p>`;
+ let cat='';const draw=()=>{$('#chat').innerHTML=chat.length?chat.map(m=>`<div class="msg ${m.role[0]}">${esc(m.content)}</div>`).join(''):'<div class="msg a">Tell me what’s going wrong (for example: “My clothing store is not getting customers”). I’ll ask a few questions if I need more detail, then suggest causes, a step-by-step plan, free tools, sample marketing copy and ways to measure results.</div>';$('#chat').scrollTop=1e9};draw();
+ const mem=store.get('gg_mem');if(mem){$('#mb').value=mem.b;$('#mc').value=mem.c;$('#mst').textContent='Saved details will be used.'}
+ $('#mem').onclick=()=>{$('#mst').textContent=store.set('gg_mem',{b:$('#mb').value,c:$('#mc').value})?'Saved on this device.':'Couldn’t save.'};
+ $('#forget').onclick=()=>{try{localStorage.removeItem('gg_mem')}catch(e){}$('#mb').value=$('#mc').value='';$('#mst').textContent='Forgotten.'};
+ $$('[data-cat]').forEach(b=>b.onclick=()=>{cat=b.dataset.cat;$('#cat').textContent='Focus: '+cat});
+ $('#newc').onclick=()=>{chat=[];draw()};
+ const send=async txt=>{if(!txt.trim())return;const m=store.get('gg_mem');chat.push({role:'user',content:txt});chat.push({role:'assistant',content:'Thinking…'});draw();$('#send').disabled=true;
+  const sys=RULES+'\n'+ctx()+(cat?`\nFocus area: ${cat}.`:'')+(m?`\nSaved business details (user consented): ${m.b}; ${m.c}`:'')+'\nProcess: understand the problem; ask 2–4 short follow-up questions only if essential; then give likely causes, practical solutions, a numbered step-by-step action plan, free/low-cost tools, sample marketing content, and how to measure results. Keep it concise.';
+  const hist=chat.slice(0,-1).map(x=>({...x}));hist[0]={role:'user',content:sys+'\n\n---\n'+hist[0].content};
+  try{const r=await ai(hist,x=>{chat[chat.length-1].content=x;draw()});chat[chat.length-1].content=r}catch(e){chat[chat.length-1].content='⚠ '+e.message}draw();$('#send').disabled=false};
+ $('#send').onclick=()=>{const v=$('#ci').value;$('#ci').value='';send(v)};
+ if(window._pending){const p=window._pending;window._pending=null;send(p)}}
+function website(P){P.innerHTML=`<h3>Free AI Website Builder</h3><p class="note">Generates a mobile-friendly draft you can edit and download. <strong>Nothing is published</strong>: to put it online you need hosting. Many hosts have free tiers; custom domains normally cost money, and GrowGlobalAI never buys one for you.</p>
+<div class="form"><div><label for="w1">Business name</label><input id="w1"></div><div><label for="w2">Category</label><select id="w2">${CATS.map(x=>`<option>${x}</option>`).join('')}</select></div><div><label for="w3">City</label><input id="w3"></div><div class="full"><label for="w4">Products or services</label><textarea id="w4" rows="2"></textarea></div><div><label for="w5">Phone / WhatsApp (shown on site)</label><input id="w5"></div><div><label for="w6">Email (shown on site)</label><input id="w6" type="email"></div><div><label for="w7">Brand colour</label><input id="w7" type="color" value="#0a5c8f"></div><div><label for="w8">Style</label><select id="w8"><option>Clean and modern</option><option>Warm and friendly</option><option>Bold</option><option>Elegant</option></select></div></div>
+<div class="bar"><button id="wg">Generate website</button><button class="ghost" id="wd" disabled>Download HTML file</button></div><p class="note" id="wm">Preview is editable: click text in the preview to change it.</p><iframe id="pv" title="Website preview" hidden></iframe>`;
+ $('#wg').onclick=async()=>{const n=$('#w1').value.trim();if(!n){$('#wm').innerHTML='<span class="warn">Enter a business name first.</span>';return}$('#wg').disabled=true;$('#wm').textContent='Generating…';
+  const v=[1,2,3,4,5,6,7,8].map(i=>$('#w'+i).value);
+  try{const raw=await ai(`${RULES}\n${ctx()}\nReturn ONLY JSON (no markdown) for a small-business website in the user language: {"title":"SEO title <60 chars","desc":"meta description <155 chars","tagline":"","intro":"","about":"2 short paragraphs","items":[{"name":"","desc":""}] (4-6),"gallery":["short caption x4"],"faqs":[{"q":"","a":""}] (4),"hours":"suggest placeholder text"}. Business: ${v[0]}, ${v[1]}, ${v[2]}, ${$('#country').value}. Offers: ${v[3]}. Style: ${v[7]}. Don't invent awards, reviews or numbers.`);
+   const j=JSON.parse(raw.replace(/```json|```/g,'').trim());$('#pv').hidden=false;$('#pv').srcdoc=site(j,v);$('#wd').disabled=false;$('#wm').innerHTML='Draft ready (not published). Edit text in the preview, then download.';
+   save('website','Website draft: '+n,JSON.stringify(j,null,1))}catch(e){$('#wm').innerHTML='<span class="warn">'+esc(e.message||'Couldn’t read the AI result. Try again.')+'</span>'}$('#wg').disabled=false};
+ $('#wd').onclick=async()=>{const d=$('#pv').contentDocument;d.body.removeAttribute('contenteditable');const html='<!DOCTYPE html>\n'+d.documentElement.outerHTML;d.body.setAttribute('contenteditable','true');
+  let ok=false;try{const dl=await claude.use('downloads');if(dl){await dl.save({filename:'website.html',data:html});ok=true}}catch(e){}
+  if(!ok){$('#wm').innerHTML='Download unavailable here. <button class="sm ghost" id="cph">Copy HTML</button>';$('#cph').onclick=async()=>{$('#cph').textContent=(await copy(html))?'Copied':'Copy failed'}}}}
+function site(j,v){const c=v[6]||'#0a5c8f',E=esc;const tel=v[4].replace(/[^\d+]/g,'');
+return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${E(j.title)}</title><meta name="description" content="${E(j.desc)}"><style>body{margin:0;font:17px/1.6 system-ui,sans-serif;color:#1b2b36}a{color:${c}}header{background:${c};color:#fff;padding:12px 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}header b{font-size:1.2rem;margin-right:auto}header a{color:#fff}.h{padding:48px 20px;text-align:center;background:#f4f7f9}.h h1{margin:0 0 8px;font-size:2rem}section{max-width:900px;margin:auto;padding:30px 20px}.g{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.c{border:1px solid #dbe4ea;border-radius:12px;padding:14px}.ph{height:90px;background:${c}22;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:6px;text-align:center;font-size:.9rem}.b{display:inline-block;background:${c};color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;margin:4px}footer{background:#14232d;color:#cfe;padding:20px;text-align:center}</style></head><body contenteditable="true"><header><b>${E(v[0])}</b><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></header>
+<div class="h" id="home"><h1>${E(j.tagline)}</h1><p>${E(j.intro)}</p>${tel?`<a class="b" href="tel:${E(tel)}">Call</a><a class="b" href="https://wa.me/${E(tel.replace('+',''))}">WhatsApp</a>`:''}</div>
+<section id="about"><h2>About us</h2><p>${E(j.about).replace(/\n+/g,'</p><p>')}</p></section>
+<section id="services"><h2>Products and services</h2><div class="g">${(j.items||[]).map(i=>`<div class="c"><h3>${E(i.name)}</h3><p>${E(i.desc)}</p></div>`).join('')}</div></section>
+<section id="gallery"><h2>Gallery</h2><p>Replace these placeholders with your own photos.</p><div class="g">${(j.gallery||[]).map(i=>`<div class="ph">${E(i)}</div>`).join('')}</div></section>
+<section id="faq"><h2>Frequently asked questions</h2>${(j.faqs||[]).map(f=>`<h3>${E(f.q)}</h3><p>${E(f.a)}</p>`).join('')}</section>
+<section id="contact"><h2>Contact</h2><p>${E(v[2])} · ${E(j.hours||'')}</p>${tel?`<a class="b" href="tel:${E(tel)}">Call ${E(v[4])}</a>`:''}${v[5]?`<a class="b" href="mailto:${E(v[5])}">Email us</a>`:''}</section><footer>© ${E(v[0])}</footer></body></html>`}
+function leads(R){R.innerHTML=`<h3>Simple lead tracker</h3><p class="note">Record only people who gave you permission to contact them. Data stays on this device. Never store sensitive details.</p><div class="form"><div><label for="ln">Name</label><input id="ln"></div><div><label for="lc">Contact (phone or email)</label><input id="lc"></div><div><label for="ls">Where they came from</label><input id="ls"></div><div><label for="lt">Status</label><select id="lt"><option>New</option><option>Contacted</option><option>Interested</option><option>Customer</option><option>Not now</option></select></div><div class="full"><label><input type="checkbox" id="lo" style="width:auto"> This person gave permission to be contacted</label></div></div><div class="bar"><button id="la">Add lead</button><span class="note" id="lm"></span></div><div class="scroll" id="lt2"></div>`;
+ const draw=()=>{const a=store.get('gg_leads',[]);$('#lt2').innerHTML=a.length?`<table><tr><th>Name</th><th>Contact</th><th>Source</th><th>Status</th><th></th></tr>${a.map(l=>`<tr><td>${esc(l.n)}</td><td>${esc(l.c)}</td><td>${esc(l.s)}</td><td>${esc(l.t)}</td><td><button class="sm ghost" data-d="${l.id}">Delete</button></td></tr>`).join('')}</table>`:'<p class="note">No leads yet. Add one after you have permission to contact them.</p>';$$('[data-d]',R).forEach(b=>b.onclick=()=>{store.set('gg_leads',a.filter(l=>l.id!=b.dataset.d));draw()})};draw();
+ $('#la').onclick=()=>{if(!$('#ln').value.trim()||!$('#lo').checked){$('#lm').innerHTML='<span class="warn">Add a name and confirm permission.</span>';return}const a=store.get('gg_leads',[]);a.unshift({id:Date.now(),n:$('#ln').value,c:$('#lc').value,s:$('#ls').value,t:$('#lt').value});store.set('gg_leads',a);['ln','lc','ls'].forEach(i=>$('#'+i).value='');$('#lo').checked=false;$('#lm').textContent='Added.';draw()}}
+function dash(P){const a=items();P.innerHTML=`<h3>Dashboard</h3><p class="note">Prototype: items are saved in this browser only. There are no accounts yet, so nothing is shared or synced, and only people using this device can see them. Real sign-in and a database are needed before cloud saving. Credits: the free tier has no credit balance in this prototype; usage limits are set by the AI service.</p>
+<div class="bar"><button class="ghost" id="ex1">Export my data</button><button class="ghost" id="del">Delete all my data</button><span class="note" id="dm"></span></div>
+<h3 style="margin-top:18px">Saved items (${a.length})</h3>${a.length?a.map(x=>`<details><summary>${esc(x.title)} <span class="note">${new Date(x.ts).toLocaleDateString()}</span></summary><div class="out">${esc(x.out)}</div><div class="bar"><button class="sm ghost" data-c="${x.id}">Copy</button><button class="sm ghost" data-r="${x.id}">Remove</button></div></details>`).join(''):'<p class="note">Nothing saved yet. Generate something in any tool and choose “Save to dashboard”.</p>'}`;
+ $$('[data-c]',P).forEach(b=>b.onclick=async()=>{const x=a.find(i=>i.id==b.dataset.c);b.textContent=(await copy(x.out))?'Copied':'Copy failed'});
+ $$('[data-r]',P).forEach(b=>b.onclick=()=>{store.set('gg_items',a.filter(i=>i.id!=b.dataset.r));dash(P)});
+ $('#ex1').onclick=async()=>{const data=JSON.stringify({items:a,leads:store.get('gg_leads',[]),memory:store.get('gg_mem',null)},null,1);try{const dl=await claude.use('downloads');if(dl){await dl.save({filename:'growglobalai-data.json',data});return}}catch(e){}$('#dm').textContent=(await copy(data))?'Download unavailable; data copied to clipboard.':'Export unavailable here.'};
+ $('#del').onclick=()=>{if(confirm('Delete all saved items, leads and business details from this device?')){['gg_items','gg_leads','gg_mem'].forEach(k=>{try{localStorage.removeItem(k)}catch(e){}});dash(P)}}}
+
+$('#tabs').innerHTML=TABS.map(t=>`<button role="tab" data-t="${t[0]}" aria-selected="false">${t[1]}</button>`).join('');
+$$('#tabs button').forEach(b=>b.onclick=()=>show(b.dataset.t));
+$('#toolgrid').innerHTML=[['solver','AI Problem Solver','Describe a problem and get causes, a plan and tools.'],['website','Website Builder','A mobile-friendly draft site you can edit and download.'],['marketing','Marketing Studio','Captions, ads, scripts, WhatsApp messages, calendars.'],['seo','SEO Assistant','Titles, keywords, local search and checklists.'],['leadgen','Lead Ideas','Personas, outreach templates and a permission-based tracker.'],['startup','Startup Assistant','Idea checks, MVP plans and pitch outlines.']].map(t=>`<div class="card"><h3>${t[1]}</h3><p>${t[2]}</p><button class="sm" data-tab="${t[0]}">Open</button></div>`).join('');
+const IND=[['Clothing and fashion','a clothing store'],['Restaurants and cafés','a restaurant or café'],['Beauty and skincare','a beauty salon or skincare business'],['Real estate agents','a real estate agency'],['Retail and grocery','a retail or grocery shop'],['Photography studios','a photography studio'],['Education and coaching','an education or coaching business'],['Freelancers and creators','a freelance or creator business'],['Online stores','an online store'],['Technology startups','a technology startup'],['Local service providers','a local service business']];
+$('#indgrid').innerHTML=IND.map((x,i)=>`<div class="card"><h3>${x[0]}</h3><p>Growth plan, marketing ideas, website outline and prompts for ${x[1]}.</p><button class="sm" data-ask="I run ${x[1]}. Give me a 30-day growth plan, 5 marketing ideas, a website page outline and 3 AI prompts I can reuse. Ask me questions first if you need them.">Get a plan</button></div>`).join('');
+const ST=[['Homepage, navigation, responsive layout','ok','Working'],['AI Problem Solver chat','key','Works when AI access is available (this view uses Claude). Self-hosting needs your own server-side API key.'],['Website builder (generate, edit, download)','key','Same AI requirement. Download works where file saving is allowed. Not auto-published.'],['Marketing, SEO, Startup and Lead tools','key','Same AI requirement. Results are AI suggestions, not live ranking or keyword data.'],['Lead tracker, saved items, business details','ok','Working, stored on this device only (prototype).'],['Accounts and secure sign-in, cloud database','ext','Not built. Needs an auth/database service.'],['Publishing, hosting, custom domains','ext','Not built. Needs an external host; domains cost money and are never bought automatically.'],['Posting to social media','ext','Not built. Needs each platform’s API and your authorisation. Links open external sites only.'],['Paid plans and payments','pro','Not configured. Shown as unavailable.'],['Country-specific legal and tax guidance','pro','Prototype: AI gives general pointers and tells you to verify locally. Time zone is detected; scheduling isn’t built.']];
+$('#stat').innerHTML=ST.map(r=>`<tr><td>${r[0]}</td><td><span class="pill p-${r[1]}">${{ok:'Functional',key:'Needs AI access',ext:'Needs external service',pro:'Prototype / unavailable'}[r[1]]}</span></td><td>${r[2]}</td></tr>`).join('');
+const open=(t,p)=>{if(p)window._pending=p;show(t);$('#workspace').scrollIntoView()};
+$('#go').onclick=()=>{const v=$('#q').value.trim();if(!v){$('#q').focus();return}chat=[];open('solver',v)};
+$('#q').onkeydown=e=>{if(e.key==='Enter')$('#go').click()};
+document.addEventListener('click',e=>{const a=e.target.closest('[data-go],[data-tab],[data-ask]');if(!a)return;if(a.dataset.ask){chat=[];open('solver',a.dataset.ask)}else open(a.dataset.go||a.dataset.tab)});
+show('solver');
+</script></body></html>
